@@ -10,7 +10,7 @@
 
   ใช้ Discloud เป็น Bot Hosting  
 
-# Use 
+# Usage
 
   ในไฟล์ config.ini 
   
