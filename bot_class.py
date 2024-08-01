@@ -2,7 +2,7 @@ import discord
 from discord.ui import Button, View, Modal, TextInput
 import configparser
 
-def read_config():
+def read_token():
     config = configparser.ConfigParser()
     # Read the .ini file
     config.read('config.ini')
@@ -30,6 +30,14 @@ def read_color():
     config.read('config.ini')
     color = config.get('COLOR', 'color')
     return color
+
+def read_welcome_channel_id():
+    config = configparser.ConfigParser()
+    # Read the .ini file
+    config.read('config.ini')
+    #token = config.get('TOKEN', 'token')
+    welcome_channel_id = int(config.get('CHANNEL', 'welcome_ch_id'))  # New channel ID for confirmation
+    return welcome_channel_id
 
 
 
